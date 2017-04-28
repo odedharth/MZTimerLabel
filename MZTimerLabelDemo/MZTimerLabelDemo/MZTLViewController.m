@@ -40,6 +40,7 @@
     timer2.timerType = MZTimerLabelTypeStopWatch;
     [self.view addSubview:timer2];
     //do some styling
+    timer2.intialString = @"Hi there";
     timer2.timeLabel.backgroundColor = [UIColor clearColor];
     timer2.timeLabel.font = [UIFont systemFontOfSize:28.0f];
     timer2.timeLabel.textColor = [UIColor brownColor];

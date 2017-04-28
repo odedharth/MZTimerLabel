@@ -154,6 +154,11 @@
 				CLASSPREFIX = MZTL;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "MineS Chan";
+				TargetAttributes = {
+					3D31ECE2180E7A570085D5D4 = {
+						DevelopmentTeam = SQM2V364MZ;
+					};
+				};
 			};
 			buildConfigurationList = 3D31ECDE180E7A570085D5D4 /* Build configuration list for PBXProject "MZTimerLabelDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -276,6 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = SQM2V364MZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MZTimerLabelDemo/MZTimerLabelDemo-Prefix.pch";
 				INFOPLIST_FILE = "MZTimerLabelDemo/MZTimerLabelDemo-Info.plist";
@@ -290,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = SQM2V364MZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MZTimerLabelDemo/MZTimerLabelDemo-Prefix.pch";
 				INFOPLIST_FILE = "MZTimerLabelDemo/MZTimerLabelDemo-Info.plist";

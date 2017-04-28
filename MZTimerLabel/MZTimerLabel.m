@@ -58,6 +58,8 @@
 
 @synthesize timeFormat = _timeFormat;
 
+@synthesize intialString = _intialString;
+
 - (void)dealloc {
     if (_timer) {
         [_timer invalidate];
@@ -159,6 +161,15 @@
     }
     
     return _timeFormat;
+}
+
+- (NSString*)intialString
+{
+    if ([_intialString length] == 0 || _intialString == nil) {
+        _intialString = @"";
+    }
+    
+    return _intialString;
 }
 
 - (NSDateFormatter*)dateFormatter{
@@ -385,7 +396,14 @@
                     self.timeLabel.text = labelText;
                 }
             } else {
-                self.timeLabel.text = [self.dateFormatter stringFromDate:timeToShow];
+                NSString *time = [self.dateFormatter stringFromDate:timeToShow];
+                if ([_intialString length] == 0 || _intialString == nil) {
+                    self.timeLabel.text = time;
+                } else {
+                    NSString *final;
+                    final = [NSString stringWithFormat:@"%@%@", _intialString, time];
+                    self.timeLabel.text = final;
+                }
             }
         }
     }

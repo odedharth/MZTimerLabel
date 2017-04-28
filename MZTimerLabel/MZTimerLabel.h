@@ -71,6 +71,8 @@ typedef enum{
 /*Time format wish to display in label*/
 @property (nonatomic,copy) NSString *timeFormat;
 
+@property (nonatomic,copy) NSString *intialString;
+
 /*Target label obejct, default self if you do not initWithLabel nor set*/
 @property (nonatomic,strong) UILabel *timeLabel;
 
